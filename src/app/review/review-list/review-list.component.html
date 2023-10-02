@@ -1,0 +1,73 @@
+<div class="row mb-3">
+  <div class="col">
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="gap-2 d-flex align-items-center">
+        <div class="h6 mb-0 me-3">Фильтры</div>
+        <div>
+          <select
+            #typeSelect
+            class="form-select rounded-5"
+            [(ngModel)]="selectedType"
+            (ngModelChange)="onChangeSelectedType(typeSelect.value)"
+          >
+            <option *ngFor="let type of types" [value]="type.id">{{ type.label }}</option>
+          </select>
+        </div>
+        <div>
+          <select
+            #brandSelect
+            class="form-select rounded-5"
+            [(ngModel)]="selectedBrand"
+            (ngModelChange)="onChangeSelectedBrand(brandSelect.value)"
+          >
+            <option *ngFor="let brand of brands" [value]="brand.id">{{ brand.label }}</option>
+          </select>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary text-white rounded-5">Оставить отзыв</button>
+    </div>
+  </div>
+</div>
+
+<div class="row h-100 gx-3">
+  <div class="col-4" style="height: calc(100vh - 145px)">
+    <div class="border rounded-2 h-100 p-0 overflow-auto">
+      <ng-container *ngIf="filteredReviews.length; else typeNotSelected">
+        <div class="list-group list-group-flush">
+          <div
+            class="list-group-item list-group-item-action cursor-pointer"
+            [class.bg-teal-100]="review.id === selectedReview?.id"
+            *ngFor="let review of filteredReviews"
+            (click)="onSelectReview(review)"
+          >
+            <div class="d-flex w-100 justify-content-between align-items-center">
+              <div class="mb-1 me-2 fw-bold">{{ review.title }}</div>
+              <div class="d-flex flex-column gap-1">
+                <div class="badge rounded-pill bg-blue-400 text-white"><i class="bi-eye"></i> {{ review.views }}</div>
+                <div class="badge rounded-pill bg-teal-400"><i class="bi-bar-chart-fill"></i> {{ review.score }}</div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-2 mb-2">
+              <img class="rounded-circle" style="width: 40px" [src]="review.author.photo" [alt]="review.author.name" />
+              <div class="small">
+                <div>{{ review.author.name }}</div>
+                <div>{{ review.author.date | date: "mediumDate" }}</div>
+              </div>
+            </div>
+
+            <small class="text-secondary d-block">{{ review.type === "dealer" ? review.dealer : review.brand + " " + review.model }}</small>
+          </div>
+        </div>
+      </ng-container>
+      <ng-template #typeNotSelected>
+        <div class="h-100 d-flex justify-content-center align-items-center">
+          <h5>Выберите тип отзывов в фильтре</h5>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+  <div class="col-8" style="height: calc(100vh - 145px)">
+    <app-review-detail [selectedReview]="selectedReview"></app-review-detail>
+  </div>
+</div>

@@ -1,0 +1,157 @@
+{
+  "list": [
+    {
+      "id": "baic",
+      "label": "BAIC"
+    },
+    {
+      "id": "bmw",
+      "label": "BMW"
+    },
+    {
+      "id": "changan",
+      "label": "Changan"
+    },
+    {
+      "id": "chery",
+      "label": "Chery"
+    },
+    {
+      "id": "citroen",
+      "label": "Citroen"
+    },
+    {
+      "id": "dongfeng",
+      "label": "DongFeng"
+    },
+    {
+      "id": "cheryexeed",
+      "label": "EXEED"
+    },
+    {
+      "id": "evolute",
+      "label": "Evolute"
+    },
+    {
+      "id": "faw",
+      "label": "FAW"
+    },
+    {
+      "id": "gac-motor",
+      "label": "GAC Motor"
+    },
+    {
+      "id": "geely",
+      "label": "Geely"
+    },
+    {
+      "id": "great-wall",
+      "label": "Great Wall"
+    },
+    {
+      "id": "haval",
+      "label": "Haval"
+    },
+    {
+      "id": "hyundai",
+      "label": "Hyundai"
+    },
+    {
+      "id": "jac",
+      "label": "JAC"
+    },
+    {
+      "id": "jetour",
+      "label": "Jetour"
+    },
+    {
+      "id": "jetta",
+      "label": "Jetta"
+    },
+    {
+      "id": "kia",
+      "label": "KIA"
+    },
+    {
+      "id": "kaiyi",
+      "label": "Kaiyi"
+    },
+    {
+      "id": "lada",
+      "label": "LADA"
+    },
+    {
+      "id": "lexus",
+      "label": "Lexus"
+    },
+    {
+      "id": "livan",
+      "label": "Livan"
+    },
+    {
+      "id": "mazda",
+      "label": "Mazda"
+    },
+    {
+      "id": "mercedes_benz",
+      "label": "Mercedes-Benz"
+    },
+    {
+      "id": "mitsubishi",
+      "label": "Mitsubishi"
+    },
+    {
+      "id": "omoda",
+      "label": "OMODA"
+    },
+    {
+      "id": "sitrak",
+      "label": "Sitrak"
+    },
+    {
+      "id": "skoda",
+      "label": "Skoda"
+    },
+    {
+      "id": "sollers",
+      "label": "Sollers"
+    },
+    {
+      "id": "suzuki",
+      "label": "Suzuki"
+    },
+    {
+      "id": "tank",
+      "label": "Tank"
+    },
+    {
+      "id": "toyota",
+      "label": "Toyota"
+    },
+    {
+      "id": "volkswagen",
+      "label": "Volkswagen"
+    },
+    {
+      "id": "volvo",
+      "label": "Volvo"
+    },
+    {
+      "id": "voyah",
+      "label": "Voyah"
+    },
+    {
+      "id": "gaz",
+      "label": "ГАЗ"
+    },
+    {
+      "id": "moscvich",
+      "label": "Москвич"
+    },
+    {
+      "id": "uaz",
+      "label": "УАЗ"
+    }
+  ],
+  "total": 38
+}
